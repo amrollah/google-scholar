@@ -9,7 +9,9 @@ Our crawling procedure:
 The publications list is imported from sample.xlsx file. For every publication is searched on Google Scholar to find either exact match in title, year, author names or the first result which has the title words somewhere in the content. For each publication result, the citing artciles are fetched with the link provided at Google scholar beneath the search result. These extracted results are saved in an sqlite database with the following schema. The publications are stored in a table called pub, and citations between publications are represented by a table called cite.
 <br>
 
-Table('pub')<br>
+Table('pub')
+==========
+
 fields
 --------
 
@@ -27,7 +29,9 @@ fields
 
 
 <br>
-Table('cite')<br>
+Table('cite')
+==========
+
 fields
 --------
 
